@@ -1,5 +1,5 @@
 function calc (a, b, operator) {
-    const isNotValid = ((typeof a !== "number") || (typeof b !== "number"));
+    const isNotValid = (isNan(a) || isNaN(b));
     if (isNotValid){
         return "Error";
     }
