@@ -3,19 +3,21 @@ function calc (a, b, operator) {
     if (isNotValid){
         return "Error";
     }
-
+    
+    a = +a
+    b = +b
     if (operator === "multi"){
-        return +a * +b;
+        return a * b;
     } else if (operator === "pow"){
-        return (+a) ** +b;
+        return a ** b;
     } else if (operator === "sum"){
-        return +a + +b;
+        return a + b;
     } else if (operator === "div"){
-        return +a / +b;
+        return a / b;
     } else if (operator === "rem"){
-        return +a % +b;
+        return a % b;
     } else if (operator === "sub"){
-        return +a - +b;
+        return a - b;
     }
     
     return "unknown operation";
