@@ -1,5 +1,5 @@
 function calc (a, b, operator) {
-    const isNotValid = (isNaN(a) || isNaN(b) || !a || !b || !operator);
+    const isNotValid = ((typeof a !== "number") || (typeof b !== "number"));
     if (isNotValid){
         return "Error";
     }
@@ -21,5 +21,5 @@ function calc (a, b, operator) {
     return "unknown operation";
 }
 
-console.log(calc(2, 3, "sum"))
+console.log(calc(0, 3, "sum"))
 
