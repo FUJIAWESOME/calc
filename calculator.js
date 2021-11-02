@@ -3,9 +3,8 @@ function calc (a, b, operator) {
     if (isNotValid){
         return "Error";
     }
-    
-    a = +a
-    b = +b
+
+    +a, +b
     if (operator === "multi"){
         return a * b;
     } else if (operator === "pow"){

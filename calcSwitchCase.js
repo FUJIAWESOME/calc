@@ -3,8 +3,7 @@ function calc (a, b, operator) {
     if (isNotValid){
         return "Error";
     }
-    a = +a
-    b = +b
+    +a, +b
     switch(operator) {
         case "sum":
             console.log(a + b); 
